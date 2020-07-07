@@ -1,0 +1,178 @@
+body {
+    background-color: lightslategrey;
+    color: lightyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+/* HEADER */
+header {
+    background-color: maroon;
+    background-image: url(images/DOA.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    height: 480px;
+}
+header nav ul li.mobile{
+    display: none;
+}
+/* RESPONSIVE RULES */
+@media screen and (max-width:883px){
+    header nav ul li.mobile{
+        display: inline-block;
+    }
+
+    header nav ul li.desktop{
+        display: none;
+    }
+}
+header h1{
+    background-color: navy;
+    margin: 10px 0 0 0;
+    padding: 10px;
+}
+header nav {
+    background-color: rgb(145, 112, 235);
+    margin: 0px;
+    padding: 10px;
+}
+header nav ul {
+    background-color: mediumturquoise;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+header nav ul li {
+    background-color: mediumorchid;
+    display:  inline-block;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: 10px;
+}
+header nav ul li:first-child{
+    background-color: darkgreen;
+    margin-left: 0px;
+}
+header nav ul li:first-child:hover{
+    background-color: gold;
+}
+header nav ul li:hover{
+    background-color: ghostwhite;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+header nav ul li a{
+    text-decoration: none;
+}
+/* LOGO */
+header nav ul li.logo{
+    padding: 0px;
+}
+header nav ul li.logo a{
+    background-image: url(images/DOA1.jpg);
+    display: inline-block;
+    text-indent: -999999px;
+    width: 300px;
+    height: 169px;
+    margin: 0px;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -40px;
+}
+/* RESPONSIVE RULES */
+@media screen and (max-width:883px){
+    header nav ul li.logo a{
+        top: 40px;
+    }
+}
+@media screen and (max-width:600px){
+    header nav ul li.logo a{
+        top: 0px;
+    }
+}
+/* SECTIONS */
+section.content {
+    display: flex; 
+    color: black;
+    margin: 0px;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+section.content div {
+    margin: auto;
+    display:  inline-block;
+}
+
+/* SECTION FIRST */
+section.content.first {
+    background-color: rgb(15, 134, 75);  
+    height: 400px;
+}
+/* RESPONSIVE RULES */
+@media screen and (max-width:883px){
+    section.content.first {
+        background-color: rgb(209, 51, 214);  
+    }
+}
+@media screen and (max-width:600px){
+    section.content.first {
+        background-color: rgb(51, 11, 230);  
+    }
+}
+
+section.content.first div {
+    background-color: khaki;
+    width: 250px;
+    height: 250px;
+    padding: 0px;
+    
+}
+section.content.first div:hover{
+    background-color: tomato;
+}
+section.content.first div img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: black 10px 10px 10px;
+    border: 1px solid white;
+}
+section.content.first div figure{
+    background-color: blue;
+    text-align: center;
+}
+section.content.first div h4{
+    background-color: blueviolet;
+    position: relative;
+    top: 0;
+    text-align: center;
+}
+
+/* SECTION SECOND */
+section.content.second {
+    background-color: crimson;
+}
+
+section.content.second div {
+    background-color: rgb(155, 140, 240);
+    width: 150px;
+    height: 180px;
+    padding: 50px;
+}
+/* FOOTER */
+footer {
+    background-color: olivedrab;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-size: 10px;
+    margin: 0px;
+    padding: 10px;
+}
