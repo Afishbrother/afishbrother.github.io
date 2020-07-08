@@ -1,12 +1,12 @@
 // first javascripts
-var name = prompt("what is your first name?");
-var lastname = prompt("what is your last name?");
+// var name = prompt("what is your first name?");
+// var lastname = prompt("what is your last name?");
 
-function welcome (name,lastname){
-    return "Welcome "+ name+' '+lastname+'!';
-}
-var a =welcome(name,lastname);
-alert(a);
+// function welcome (name,lastname){
+//     return "Welcome "+ name+' '+lastname+'!';
+// }
+// var a =welcome(name,lastname);
+// alert(a);
 /*
 var mylist=['apple','orange','bananas'];
 mylist.forEach(function(value,index){

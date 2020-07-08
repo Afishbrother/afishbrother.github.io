@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Standard Website!</title>
     <link rel="stylesheet" href="../styles.css">
+    <style>
+        section{
+            /* display: flex;  */
+            text-align: center;
+            /* flex-direction: column; */
+            /* flex-wrap: wrap; */
+        }
+        section img.hide{
+            display: none;
+        }
+        section img{
+            text-align: center;
+        }
+        section ul {
+            list-style-type: none;
+        }
+        section ul li {
+            text-align: center;
+            margin: 10px;
+        }
+        section ul li a {
+            text-decoration: none;
+        }
+        section ul li a:hover{
+            text-decoration: underline;
+        }
+        section ul li a.hideall{
+            background-color: rgb(230, 67, 39);
+            border-radius: 10px;
+            padding: 5px;
+            color: yellow;
+        }
+
+    </style>
 </head>
 <body>body
     <header>header
@@ -18,15 +52,22 @@
         <h1>'H1':Contact</h1>
     </header>
     <section>section1
-        <div>a</div>
-        <div>b</div>
-        <div>c</div>
+        <ul>
+            <li><a data-img="hanbing-pic" id="hanbing" href="#">1111</a></li>
+            <li><a data-img="liulang-pic" id="liulang" href="#">2222</a></li>
+            <li><a data-img="jiansheng-pic" id="jiansheng" href="#">3333</a></li>
+            <li><a class="hideall" id="hideall" href="#">hide all</a></li>
+        </ul>
+
+        <img class="hide" id="hanbing-pic" src="../images/hanbing.jpg" alt="hanbing">
+        <img class="hide" id="liulang-pic" src="../images/liulang.jpg" alt="liulang">
+        <img class="hide" id="jiansheng-pic" src="../images/jiansheng.jpg" alt="jiansheng">
+
     </section>
-    <section>section2:lower section</section>
-    <footer>footer</footer>
+    <footer>address:beijing china tel:138 8888 8888 email: google@gmail.com</footer>
 
 
-
+    <script src="../scripts/events.js"></script>
 
 </body>
 </html>
