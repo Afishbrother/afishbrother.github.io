@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Standard Website!</title>
     <link rel="stylesheet" href="../styles.css">
+    <style>
+        section ul li input {
+            display: none;
+        }
+        section ul li.edit span {
+            display: none;
+        }
+        section ul li.edit input{
+            display: initial;
+        }
+    </style>
 </head>
 <body>body
     <header>header
@@ -18,15 +29,26 @@
         <h1>'H1':Locations</h1>
     </header>
     <section>section1
-        <div>a</div>
-        <div>b</div>
-        <div>c</div>
+        <ul id="checklist">
+            <li>
+                <span>apples</span>
+                <input value="Apples">
+            </li>
+            <li>
+                <span>oranges</span>
+                <input value="Oranges">
+            </li>
+            <li>
+                <span>bananas</span>
+                <input value="Bananas">
+            </li>
+        </ul>
     </section>
-    <section>section2:lower section</section>
-    <footer>footer</footer>
+    
+    <footer>address:beijing china tel:138 8888 8888 email: google@gmail.com</footer>
 
 
-
+    <script src="../scripts/edit.js"></script>
 
 </body>
 </html>
